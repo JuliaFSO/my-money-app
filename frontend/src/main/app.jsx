@@ -1,9 +1,13 @@
 import React from 'react';
 import '../common/template/dependencies';
 
+import Header from '../common/template/header';
+import Sidebar from '../common/template/sidebar';
+
 const App = props => (
   <div className='wrapper'>
-    <h1>My App</h1>
+    <Header />
+    <Sidebar />
   </div>
 );
 
