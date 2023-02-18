@@ -2,7 +2,7 @@ const webpack =  require('webpack')
 const ExtractTextPlugin =  require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   output: {
     path: __dirname + '/public',
     filename: './src/main/app.jsx'
@@ -37,11 +37,11 @@ module.exports = {
         plugins: ['transform-object-rest-spread']
       }
     }, {
-      test: /\.css$/,
-      use: ExtractTextPlugin.extract('style-loader', 'css-loader')
+      test: /\.css$/i,
+      use: ["style-loader", "css-loader"],
     }, {
-      test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
-      loader: 'file'
+      test: /\.woff|.woff2|.ttf|.jpg|.png|.eot|.svg*.*$/,
+      loader: 'file-loader'
     }]
   }
 }
