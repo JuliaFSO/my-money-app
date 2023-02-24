@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter } from 'react-router-dom'
 
 import '../common/template/dependencies';
 
@@ -8,14 +9,14 @@ import Footer from '../common/template/footer';
 import Routes from './routes';
 
 const App = props => (
+  <HashRouter>
     <div className='wrapper'>
       <Header />
       <Sidebar />
-      <div className='content-wrapper'>
-        <Routes />
-      </div>
+      <Routes />
       <Footer />
     </div>
+  </HashRouter>
 );
 
 export default App;
