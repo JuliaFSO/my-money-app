@@ -3,7 +3,7 @@ import React from 'react';
 const Header = props => {
   return (
     <header className='main-header'>
-      <a href='/#/' className='logo'>
+      <a href='/' className='logo'>
         <span className='logo-mini'><b>My</b>M</span>
         <span className='logo-lg'>
           <i className='fa fa-money'></i>
@@ -11,7 +11,7 @@ const Header = props => {
         </span>
       </a>
       <nav className='navbar navbar-static-top'>
-        <a href className='sidebar-toggle' data-toggle='offcanvas'></a>
+        <a className='sidebar-toggle' data-toggle='offcanvas'></a>
       </nav>
     </header>
   );
