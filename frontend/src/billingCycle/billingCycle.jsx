@@ -38,8 +38,8 @@ class billingCycle extends Component {
         </Content>
       </div>
       );
-    }
-}
+    };
+};
 
 const mapDispatchToProps = dispatch => bindActionCreators({selectTab, showTabs}, dispatch);
 export default connect(null, mapDispatchToProps)(billingCycle);
