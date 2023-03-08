@@ -1,4 +1,5 @@
 import Axios from "axios";
+import { toastr } from "react-redux-toastr";
 const BASE_URL = "http://localhost:3003/api";
 
 export function getList() {
@@ -10,7 +11,13 @@ export function getList() {
 }
 
 export function create(values) {
-  Axios.post(`${BASE_URL}/billingCycles`, values);
+  Axios.post(`${BASE_URL}/billingCycles`, values)
+      .then(resp => {
+        toastr.success("Sucess", "The operation completed successfully.")
+      })
+      .catch(e => {
+        e.response.data.errors.forEach(error => toastr.error("Error", error));
+      });
   return {
     type: "CREATE_BILLING_CYCLES",
     payload: values
