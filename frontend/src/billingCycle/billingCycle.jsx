@@ -12,7 +12,7 @@ import TabContent from "../common/tab/tabContent";
 import { selectTab, showTabs } from "../common/tab/tabActions";
 import List from "./billingCycleList";
 import Form from "./billingCycleForm";
-import { create, update, remove } from "./billingCycleAction";
+import { create, update, remove } from "./billingCycleActions";
 
 class billingCycle extends Component {
   componentWillMount() {
