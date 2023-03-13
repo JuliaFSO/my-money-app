@@ -15,10 +15,19 @@ export function getList() {
 }
 
 export function create(values) {
+  return submit(values, "post");
+}
+
+export function update(values) {
+  return submit(values, "put");
+}
+
+function submit(values, method) {
   return  dispatch => {
-    Axios.post(`${BASE_URL}/billingCycles`, values)
+    const id = values._id ? values._id : "";
+    Axios[method](`${BASE_URL}/billingCycles/${id}`, values)
         .then(resp => {
-          toastr.success("Sucess", "The operation completed successfully.")
+          toastr.success("Sucess", "Operation completed successfully.")
           dispatch(init());
         })
         .catch(e => {
