@@ -5,7 +5,7 @@ const MenuItem = props => {
   return (
     <li>
       <Link to={props.path} replace>
-          <i className={`fa fa-${props.icon}`}></i> {props.label}
+          <i className={`fa fa-${props.icon}`}></i> <span>{props.label}</span>
       </Link>
     </li>
   );
