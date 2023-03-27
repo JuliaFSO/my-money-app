@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './navbar';
 
 const Header = props => {
   return (
@@ -12,6 +13,7 @@ const Header = props => {
       </a>
       <nav className='navbar navbar-static-top'>
         <a className='sidebar-toggle' data-toggle='offcanvas'></a>
+        <Navbar />
       </nav>
     </header>
   );
