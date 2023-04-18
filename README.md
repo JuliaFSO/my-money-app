@@ -36,7 +36,7 @@ npm i
 npm run dev
 
 ```
-4. After completing the previous steps, open your web browser and navigate to [http://localhost:8080/](http://localhost:8080/) to access the application.
+4. After completing the previous steps, open your web browser and navigate to [http://localhost:3000/](http://localhost:3000/) to access the application.
 
 ## Footage
 
