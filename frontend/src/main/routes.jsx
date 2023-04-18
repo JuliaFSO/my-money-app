@@ -1,19 +1,15 @@
-import React from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+import React from 'react'
+import { Switch, Route, Redirect } from 'react-router'
 
-import Dashboard from "../dashboard/dashboard";
-import BillingCycle from "../billingCycle/billingCycle";
+import Dashboard from '../dashboard/dashboard'
+import BillingCycle from '../billingCycle/billingCycle'
 
-const Routes = props => {
-  return (
-    <div className='content-wrapper'>
-      <Switch>
-        <Route exact path='/' component={Dashboard} />
-        <Route path='/billingCycles' component={BillingCycle} />
-        <Redirect from='*' to='/' />
-      </Switch>
-    </div>
-  );
-}
-
-export default Routes;
+export default props => (
+  <div className='content-wrapper'>
+    <Switch>
+      <Route exact path='/' component={Dashboard} />
+      <Route path='/billingCycles' component={BillingCycle} />
+      <Redirect from='*' to='/' />
+    </Switch>
+  </div>
+)

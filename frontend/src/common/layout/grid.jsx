@@ -1,24 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-class Grid extends Component {
-  toCssClass(numbers) {
-    const cols = numbers ? numbers.split(' ') : [];
-    let cssClass = '';
-    if (cols[0]) cssClass += `col-xs-${cols[0]}`;
-    if (cols[1]) cssClass += ` col-sm-${cols[1]}`;
-    if (cols[2]) cssClass += ` col-md-${cols[2]}`;
-    if (cols[3]) cssClass += ` col-lg-${cols[3]}`;
-    return cssClass;
-  }
+export default class Grid extends Component {
 
-  render() {
-    const gridClass = this.toCssClass(this.props.cols || '12');
-    return (
-      <div className={gridClass}>
-        {this.props.children}
-      </div>
-    );
-  }
+    toCssClasses(numbers) {
+        const cols = numbers ? numbers.split(' ') : []
+        let classes = ''
+
+        if(cols[0]) classes += `col-xs-${cols[0]}` 
+        if(cols[1]) classes += ` col-sm-${cols[1]}`
+        if(cols[2]) classes += ` col-md-${cols[2]}`
+        if(cols[3]) classes += ` col-lg-${cols[3]}`
+
+        return classes 
+    }
+
+    render() {
+        const gridClasses = this.toCssClasses(this.props.cols || '12')
+        return (
+            <div className={gridClasses}> 
+                {this.props.children}
+            </div> 
+        )
+    }
 }
-
-export default Grid;

@@ -1,14 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-const footer = props => {
-  return (
-    <footer className="main-footer">
-      <strong>
-        Copyright &copy; 2023 by
-        <a href="https://github.com/JuliaFSO" target="_blank"> JuliaFSO</a>
-      </strong>
+export default props => (
+    <footer className='main-footer'> 
+        <strong> 
+            Copyright &copy; 2017
+            <a href='http://cod3r.com.br' target='_blank'> Cod3r</a>.
+        </strong>
     </footer>
-  );
-};
-
-export default footer;
+)

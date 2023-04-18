@@ -1,0 +1,31 @@
+{
+  "name": "my-money-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "admin-lte": "2.3.11",
+    "axios": "0.18.0",
+    "font-awesome": "4.7.0",
+    "ionicons": "3.0.0",
+    "jquery": "2.2.3",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.7",
+    "react-redux-toastr": "7.2.3",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.1.1",
+    "redux": "3.7.2",
+    "redux-form": "7.2.3",
+    "redux-multi": "0.1.12",
+    "redux-promise": "0.5.3",
+    "redux-thunk": "2.2.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "production": "webpack --progress -p"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
