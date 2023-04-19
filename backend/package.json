@@ -8,19 +8,21 @@
     "production": "pm2 start src/loader.js --name my-money-backend"
   },
   "keywords": [],
-  "author": "",
+  "author": "JuliaFSO",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "express-query-int": "^1.0.1",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.13.19",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.7.5",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.5",
-    "pm2": "^2.1.5"
+    "pm2": "^4.2.3"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^2.0.2"
   }
 }
